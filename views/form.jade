@@ -1,0 +1,34 @@
+html
+html
+	head
+		title Form Tester
+	body
+		form(action = "/users", method = "POST")
+			div
+				label(for = "page_name") Page Name:
+				input(name = "page_name" value = "") 
+			br
+
+			div 
+				label(for='template') Choose Template:
+				select#template(name='template')
+					option(value='')
+					option(value='homeTemplate1') hometemplate1
+					option(value='homeTemplate2') hometemplate2
+			br
+
+			button(type = "submit") Send my greetings
+
+
+		if(tempData)
+			div=tempData.name 
+			each val, index in tempData.fields
+				if(val.field_type !=="button")
+					div
+						label(for = val.name)=val.name
+						input(name = val.name value = "" type=val.field_type)
+					br
+				else	
+					div
+						button=val.name
+					br

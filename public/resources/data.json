@@ -1,0 +1,36 @@
+{
+    "homeTemplate1": {
+        "name": "homeTemplate1",
+        "fields": [
+            {
+                "name": "title",
+                "field_type": "text"
+            },
+            {
+                "name": "content",
+                "field_type": "text"
+            },
+            {
+                "name": "image",
+                "field_type": "file"
+            },
+            {
+                "name": "submit",
+                "field_type": "button"
+            }
+        ]
+    },
+    "homeTemplate2": {
+        "name": "homeTemplate2",
+        "fields": [
+            {
+                "name": "title",
+                "field_type": "text"
+            },
+            {
+                "name": "send",
+                "field_type": "button"
+            }
+        ]
+    }
+}
